@@ -7,61 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% include "core/includes/favicons.html" %}
-    <link rel="stylesheet" href="{{ site.paths.css }}/site.css?{{ extensions.cachebuster }}" />
+
+    <link rel="stylesheet" href="{{ site.paths.css }}/styles.css?{{ extensions.cachebuster }}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#styleguide-app").load("/styleguide/styleguide.html"); 
+    });
+    </script> 
 </head>
-<body>
+<body style='background-color:#fff; height:100%'>
     {% block svgs %}
         <div style="display: none;">
             {% include "core/includes/svg.html" %}
         </div>
     {% endblock %}
+        <!--padding header and footer section or seperate padding-->
+        {% include '_partials/header.html' %}
+    
+        <!--<h1>
+            {{ meta.title }}
+        </h1>-->
 
-    <div class="content">
-        <h1>{{ meta.title }}</h1>
-
-
-        <div id="main"></div>
-
+       
         {% block content %}{% endblock %}
+     
 
-        <footer class="t-grey">
-            <div class="page-width page-width--narrow section">
-                <div class="grid ">
-                    <div class="grid-item">
-                      <h5>Company</h5>
-                      <ul class="list-inline">
-                        <li><a href="https://www.springload.co.nz/">About</a></li>
-                        <li><a href="https://www.springload.co.nz/jobs/">Jobs</a></li>
-                        <li><a href="https://www.springload.co.nz/contact-us/">Contact</a></li>
-                      </ul>
-                    </div>
+        {% include '_partials/footer.html' %}
+   
 
-                    <div class="grid-item">
-                      <h5>Events</h5>
-                      <ul class="list-inline">
-                        <li><a href="https://www.meetup.com/Wellington-Wagtail-CMS-Meetup/">Wellington Wagtail CMS Meetup</a></li>
-                        <li><a href="https://www.meetup.com/React-Wellington/">React Wellington Meetup</a></li>
-                        <li><a href="https://www.meetup.com/Oulu-Web-Development/">Oulu Web Development</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="grid-item">
-                      <h5>Discover</h5>
-                      <ul class="list-inline">
-                        <li><a href="https://www.springload.co.nz/blog/">Blog</a></li>
-                        <li><a href="https://github.com/springload">GitHub</a></li>
-                        <li><a href="https://www.twitter.com/springloadnz">Twitter</a></li>
-                      </ul>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <svg xmlns="http://www.w3.org/2000/svg" class="i i-springload"><title>Springload</title><use xlink:href="#i-springload"></use></svg>
-        </footer>
-    </div>
-
+    <script>
+    </script>
     <script async src="{{ site.paths.js }}/site.js?{{ extensions.cachebuster }}"></script>
 
     <script>

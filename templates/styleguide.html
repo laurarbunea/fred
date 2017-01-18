@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<div class='[  ]' style='background-color:#3D4149; color:#fff'>
+	  	<div class='[ wrapper ]' style=''>
+			<div class='section gutters '>
+		    	<div class='u-text-center u-auto' style='max-width:50rem'>
+		    		<img src='/fred-logo.png'>
+		    		<h1>FRED</h1>
+		    		<p>	Meet Fred, the friendly front-end style guru.
+					He helps solve a classic front-end problem: sharing and re-using common components between projects while documenting how they work so everyone in the team can use and understand them.</p>
+		    	</div>
+		    </div>
+	   </div>
+	 </div>
+  	<div class='[  ]' style=''>
+	  	<div class='[ wrapper ]' style=''>
+			<div class='section gutters '>
+		    	<div class=' u-auto' style='max-width:50rem'>
+		    		{{ data.content|markdown }}
+		    	</div>
+		    </div>
+	   </div>
+	 </div>
+	<div class='section' style='background-color:#3D4149;'>
+		<div class='[ wrapper ] '  style='max-width:70rem'>
+	    
+		             <div class='styleguide-wrapper u-auto' style='overflow: auto;'>
+				    	<div id="styleguide-app" style='width:100%; '></div>
+				    	<hr style='overflow: auto;'/>
+				    </div>
+		
+	        <div style="clear: both"></div> 
+	    </div>
+	</div>
+    
+{% endblock %}

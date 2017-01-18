@@ -1,27 +1,36 @@
+// -----------------------------------------------------------------------------
+// Page content
+// -----------------------------------------------------------------------------
+
+
 // Main content max width?
 .site-width {
     max-width: $breakpoint-xlarge;
 }
 
 // Vertical spacing
+//todo spacing param ?? this was $$base-padding
+
+$section-spacing: 3rem;
+
 .section {
-    padding-top: $base-padding;
-    padding-bottom: $base-padding;
+    padding-top: $section-spacing;
+    padding-bottom: $section-spacing;
 }
 
-.section--stacked {
-    & + & {
+    .section--stacked {
+        & + & {
+            padding-top: 0;
+        }
+    }
+
+    .section--no-top {
         padding-top: 0;
     }
-}
 
-.section--no-top {
-    padding-top: 0;
-}
-
-.section--no-bottom {
-    padding-bottom: 0;
-}
+    .section--no-bottom {
+        padding-bottom: 0;
+    }
 
 
 // TODO we have object.wrappers and components.page.content
@@ -35,7 +44,7 @@
     }
 }
 
-.page-content--no-top {
-    padding-top: 0;
-    padding-bottom: 0;
-}
+    .page-content--no-top {
+        padding-top: 0;
+        padding-bottom: 0;
+    }

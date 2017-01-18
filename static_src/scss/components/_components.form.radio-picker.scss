@@ -1,24 +1,6 @@
 // -----------------------------------------------------------------------------
 // Radio picker
 // -----------------------------------------------------------------------------
-//
-// Turns a group of radio elements into big tappable regions, while still being
-// accessible through keyboard navigation:
-//
-// <div class="radio-picker">
-//     <label>
-//         <input class="radio-picker__input" type="radio" name="" checked>
-//         <span class="radio-picker__body">
-//             Rich context goes here!
-//         </span>
-//     </label>
-//     <label>
-//         <input class="radio-picker__input" type="radio" name="">
-//         <span class="radio-picker__body">
-//             Rich context goes here!
-//         </span>
-//     </label>
-// </div>
 
 $color-radio-picker-border: #dfdfdf;
 $color-radio-picker-border-checked: #d2d2d2;
@@ -75,3 +57,26 @@ $color-white-opacity-01: rgba(0, 0, 0, .1);
     border: solid 1px $color-radio-picker-border;
     border-radius: .25em;
 }
+
+/* SG
+# Components/Radio picker
+Turns a group of radio elements into big tappable regions, while still being
+accessible through keyboard navigation:
+
+```
+<div class="radio-picker">
+     <label>
+        <input class="radio-picker__input" type="radio" name="" checked>
+        <span class="radio-picker__body">
+             Rich context goes here!
+        </span>
+    </label>
+    <label>
+        <input class="radio-picker__input" type="radio" name="">
+        <span class="radio-picker__body">
+             Rich context goes here!
+        </span>
+    </label>
+</div>
+```
+*/

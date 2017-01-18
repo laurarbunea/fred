@@ -1,0 +1,31 @@
+<div style=''>
+	<div class='[ wrapper ] t-plain' id='header' role="contentinfo" >
+
+	    <div class='[ gutters ]'>
+	        <div class='[ grid ]'>
+
+	        	<div class='[ width-1/2 ]'>
+		        	<p>
+		        		 <img src='{{ site.paths.imagesSrc }}/logo-springload.jpg' alt='' class=''/>
+		        		 <!-- <img src='{{ config.assets.folder_images }}/logo-springload.jpg' alt='' class=''/> 
+		        		{{ config.assets.folder_images }}<img src='{{ site.paths.imagesSrc }}/logo.jpg' alt='' class=''/> Living Style guide-->
+		        	</p>
+		        </div>
+
+	        	<div class='[ width-1/2 ] u-text-right'>
+
+					{% for item in styleguide %}
+
+						<a class='nav-primary__link' href="#{{ item.slug }}">
+							{{ item.title }}
+						</a>
+
+					{% endfor %}
+
+				</div>
+
+	        </div>
+	    </div>
+
+	</div>
+</div>

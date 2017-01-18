@@ -16,7 +16,6 @@
 //    of space to the left and right, as padding, to keep consistent spacing.
 // 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
 
-
 $color-btn:                             $color-page-text;
 $color-border:                          $color-page-text;
 $color-btn-background:                  #fff;
@@ -81,6 +80,10 @@ $padding-btn: $base-spacing-unit;
 
 }
 
+// --------------------------------------------------
+// ** Button modifiers
+// -------------------------------------------------
+
 .btn--small {
     padding-right: $padding-btn / 1.5;
     padding-left: $padding-btn / 1.5;
@@ -96,8 +99,22 @@ $padding-btn: $base-spacing-unit;
     width: 100%;
 }
 
-.btn--block\@small {
-    @include small {
-        width: 100%;
+    .btn--block\@small {
+        @include small {
+            width: 100%;
+        }
     }
-}
+
+
+/* SG
+# Components/Buttons
+
+copy buttons
+```
+<a href='#' class='btn'> button </a>
+<a href='#' class='btn btn--small'> small button </a>
+<a href='#' class='btn btn--wide'> wide button </a>
+<a href='#' class='btn btn--block'> block button </a>
+
+```
+*/
