@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// Page content
+// -----------------------------------------------------------------------------
+
+
+// Do we change this to site-wrapper
+.site-wrapper {
+    max-width: $breakpoint-xlarge;
+}
+
+.wrapper {
+    @include clearfix;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left:  auto;
+}
+
+    .wrapper--wide {
+        max-width: 1400px;
+    }
+
+    .wrapper--narrow {
+        max-width: 960px;
+    }
+
+/* SG
+# Components/Wrapper
+
+Wrappers control the width
+
+```
+
+<h5>1. wrapper--wide</h5>
+<h5>2. wrapper--narrow</h5>
+
+
+```
+*/
