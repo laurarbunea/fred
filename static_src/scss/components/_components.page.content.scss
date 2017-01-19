@@ -8,31 +8,6 @@
     max-width: $breakpoint-xlarge;
 }
 
-// Vertical spacing
-//todo spacing param ?? this was $$base-padding
-
-$section-spacing: 3rem;
-
-.section {
-    padding-top: $section-spacing;
-    padding-bottom: $section-spacing;
-}
-
-    .section--stacked {
-        & + & {
-            padding-top: 0;
-        }
-    }
-
-    .section--no-top {
-        padding-top: 0;
-    }
-
-    .section--no-bottom {
-        padding-bottom: 0;
-    }
-
-
 // TODO we have object.wrappers and components.page.content
 // Which one do we want to use for layout + spacing and why?
 .page-content {
