@@ -21,6 +21,8 @@ $themes: (
     $text-color: map-get($colors, text-color);
 
     .t-#{$alias} {
+        
+        //todo why ? when do we use this 
         .u-current-color {
             color: $theme-color;
         }
