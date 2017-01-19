@@ -107,14 +107,23 @@ $padding-btn: $base-spacing-unit;
 
 
 /* SG
-# Components/Buttons
+# Components/Button
 
-copy buttons
+For a base button all you need to do is add the class "btn" to your element. To modify the button further Fred has some handy classes you can use: 
 ```
-<a href='#' class='btn'> button </a>
-<a href='#' class='btn btn--small'> small button </a>
-<a href='#' class='btn btn--wide'> wide button </a>
-<a href='#' class='btn btn--block'> block button </a>
+<p><a href='#' class='btn'> button </a></p>
+
+
+<h5>1. btn--small</h5>
+<p><a href='#' class='btn btn--small'> button </a></p>
+
+
+<h5>2. btn--wide</h5>
+<p><a href='#' class='btn btn--wide'> button </a></p>
+
+
+<h5>3. btn--block </h5>
+<p><a href='#' class='btn btn--block'> button </a></p>
 
 ```
 */

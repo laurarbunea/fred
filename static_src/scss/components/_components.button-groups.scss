@@ -87,33 +87,42 @@ $button-margin: .5em;
         }
     }
 }
-/* SG
-# Components/Button group
 
-button group copy ..... 
+/* SG
+# Components/Button groups
+
+Fred has organised some button group modifiers to make your life easier.
 
 ```
+<h5>1. btn-group</h5>
+<p>Surround the button with this class and it will add a right hand margin to each button except for the last button.</p>
+
 <div class='btn-group'>
-    <a href='#' class='btn '>btn 1</a>
-    <a href='#' class='btn '>btn 2</a>
+    <a href='#' class='btn'>btn 1</a>
+    <a href='#' class='btn'>btn 2</a>
 </div>
 <br />
 
-<h5>BLOCK MODIFIER:</h5>
+<h5>2. btn-group--block</h5>
+<p>Surround the button with this class and it will modify the buttons to a full sized block.</p>
+
 <div class='btn-group--block'>
     <a href='#' class='btn '>btn 1</a>
     <a href='#' class='btn '>btn 2</a>
 </div>
 <br />
 
-<h5>JUSTIFIED MODIFER: </h5>
+<h5>3. btn-group--justified</h5>
+<p>Surround the button with this class and it will justify the buttons.</p>
 <div class='btn-group--justified'>
     <a href='#' class='btn '>btn 1</a>
     <a href='#' class='btn '>btn 2</a>
 </div>
 <br />
 
-<h5>REVERSE MODIFIER ON SMALL DEVICES: </h5>
+<h5>4. btn-group--reverse: </h5>
+<p>Surround the button with this class and it will reverse the order of the buttons when on the small breakpoint.</p>
+
 <div class='btn-group--reverse'>
     <a href='#' class='btn '>btn 1</a>
     <a href='#' class='btn '>btn 2</a>
