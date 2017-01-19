@@ -32,7 +32,17 @@ $height-header: $height-logo + (2 * $spacing-grid);
 /* SG
 # Components/page.header
 
+
+<xmp>
+    <div class="page-header page-header--fixed">
+        <p>fixed header</p>
+    </div>
+
+</xmp>
 ```
+<div class="page-header ">
+    <p>header</p>
+</div>
 
 ```
 */

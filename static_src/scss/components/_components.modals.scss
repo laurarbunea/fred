@@ -154,33 +154,36 @@ $color-modal-content-bg: #fff;
         }
     }
 
+/* SG
+# Components/modals
 
-///* SG
-//# Components/modals
+Requires '_generic.keyframes.scss';
+As of 2015, the vertical-align: middle table is still the best cross-browser
+way to vertically centre stuff. This modal component uses this pattern with
+the following structure:
 
-//Requires '_generic.keyframes.scss';
-//As of 2015, the vertical-align: middle table is still the best cross-browser
-//way to vertically centre stuff. This modal component uses this pattern with
-//the following structure:
-//
-//```
-//<div class="modal modal--active">
-//    <div class="modal__table">
-//        <div class="modal__center">
-//            <div class="modal__content">
-//               Hello!
-//          </div>
-//        </div>
-//   </div>
-//</div>
+<xmp><div class="modal modal--active">
+    <div class="modal__table">
+        <div class="modal__center">
+            <div class="modal__content">
+               Hello!
+          </div>
+        </div>
+   </div>
+</div>
 
-//<div class="modal modal--active modal--video ">
-//    <div class="modal__table">
-//        <div class="modal__center">
-//            <div class="modal__content">
-//               Modal video
-//           </div>
-//        </div>
-//    </div>
-//</div>
-//```
+<div class="modal modal--active modal--video ">
+    <div class="modal__table">
+        <div class="modal__center">
+            <div class="modal__content">
+               Modal video
+           </div>
+        </div>
+    </div>
+</div>
+</xmp>
+
+*/
+
+
+
