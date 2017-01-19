@@ -1,7 +1,7 @@
 {
 	"sgComment": "SG",
 	"srcFolder": "/Users/laura/Sites/springload-wrangler",
-	"outputFile": "/Users/laura/Sites/springload-wrangler/dist/styleguide/styleguide.html",
+	"outputFile": "/Users/laura/Sites/springload-wrangler/index.html",
 	"templateFile": "/usr/local/lib/node_modules/markdown-styleguide-generator/template/template.html",
 	"themeFile": "/Users/laura/Sites/springload-wrangler/dist/styleguide-theme/theme.css",
 	"highlightFolder": "/usr/local/lib/node_modules/markdown-styleguide-generator/node_modules/highlight.js/styles",

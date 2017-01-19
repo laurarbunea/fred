@@ -10,8 +10,9 @@
 // Logo.................Make our logo a reusable component.
 // Modals...............Modal skinning.
 // Nav primary..........The site’s main nav.
-// Page.content.........Page content styles.
-// Page.gutters.........Page gutters.
+// Page.section.........Page vertical spacing.
+// Page.wrappers........Page widths.
+// Page.gutters.........Page horizontal spacing.
 // Page.footer..........Page footer styles.
 // Page.header..........Page header styles.
 // Form.radio-picker....Radio picker form.
@@ -26,7 +27,7 @@
 @import 'components/components.logo';
 @import 'components/components.modals';
 @import 'components/components.nav.primary';
-@import 'components/components.page.wrapper';
+@import 'components/components.page.wrappers';
 @import 'components/components.page.gutters';
 @import 'components/components.page.sections';
 @import 'components/components.page.footer';
