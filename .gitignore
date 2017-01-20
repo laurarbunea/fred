@@ -2,7 +2,7 @@
 # Your own project's ignores
 # -------------------------------------------------
 # build
-# dist
+dist
 var/
 www/
 dist/

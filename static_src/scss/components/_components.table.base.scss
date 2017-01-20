@@ -34,25 +34,26 @@
 //
 // ============================================================================
 
+
 .table {
-    border: 1px solid $color-light-separator;
+    border: 1px solid $table-border-color;
     background-color: $color-white;
 }
 
     // Table sections
     .table__head {
-        border-bottom: solid 1px $color-light-separator;
+        border-bottom: solid 1px $table-border-color;
     }
 
     .table__foot {
-        border-top: solid 1px $color-light-separator;
+        border-top: solid 1px $table-border-color;
     }
 
         // Table cells
         .table__cell,
         .table__header-cell {
             padding: .75em;
-            border-right: solid 1px $color-light-separator;
+            border-right: solid 1px $table-border-color;
             vertical-align: top;
         }
 
@@ -60,13 +61,15 @@
 // add body divider line
 // Foreign exchange rates table - needs to be added to tr element
 .table__row--border\+\+ {
-    border-bottom: 5px solid  $color-light-separator;
+    border-bottom: 5px solid  $table-border-color;
 }
 
 
 /* SG
 # Components/page.table.base
 
+Base styles to be shared across all table options.
+We have 5 table options/modifiers. Usually there will be at least two options applied to a table since the table class alone is just basic styles.
 
 ```
 
