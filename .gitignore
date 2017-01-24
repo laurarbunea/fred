@@ -2,10 +2,10 @@
 # Your own project's ignores
 # -------------------------------------------------
 # build
-dist
+# dist
 var/
 www/
-dist/
+# dist/
 static/
 templates/core/includes/svg.html
 
@@ -75,4 +75,4 @@ bower_components
 # Generated files
 # -------------------------------------------------
 /core/static/js/*
-/dist/
+# /dist/
